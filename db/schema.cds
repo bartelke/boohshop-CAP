@@ -1,6 +1,6 @@
 namespace my.bookshop;
 
-using { cuid } from '@sap/cds/common';
+using { cuid, managed, Country } from '@sap/cds/common';
 
 entity Books {
     key ID : Integer;
@@ -15,7 +15,7 @@ entity Authors {
     books : Association to many Books on books.author = $self;
 }
 
-entity Orders : cuid {
+entity Orders : cuid, managed {
     key ID : UUID;
     book : Association to Books;
     quantity : Integer; 
