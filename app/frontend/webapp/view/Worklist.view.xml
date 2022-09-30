@@ -8,13 +8,12 @@
         id="page"
         headerPinnable="false"
         toggleHeaderOnTitleClick="false">
-
         <semantic:titleHeading>
             <Title
                 text="{i18n>worklistTitle}"
                 level="H2"/>
         </semantic:titleHeading>
-
+        
         <semantic:content>
             <Table
                 id="table"
@@ -78,6 +77,7 @@
                 </items>
             </Table>
         </semantic:content>
+        
     </semantic:SemanticPage>
 
 </mvc:View>

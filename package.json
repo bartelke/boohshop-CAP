@@ -50,7 +50,7 @@
       "db": {
         "kind": "sqlite",
         "credentials": {
-          "database": "bookshop.db"
+          "database": "sqlite.db"
         }
       }
     }

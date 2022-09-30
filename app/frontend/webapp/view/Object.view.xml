@@ -1,30 +1,9 @@
 <mvc:View
     controllerName="sdk.frontend.controller.Object"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:semantic="sap.f.semantic">
+    xmlns:mvc="sap.ui.core.mvc">
 
-    <semantic:SemanticPage
-        id="page"
-        headerPinnable="false"
-        toggleHeaderOnTitleClick="false"
-        busy="{objectView>/busy}"
-        busyIndicatorDelay="{objectView>/delay}">
-
-        <semantic:titleHeading>
-            <Title
-                text="{title}"
-                level="H2"/>
-        </semantic:titleHeading>
-
-        <semantic:headerContent>
-            <ObjectNumber
-                number="{
-                    path: 'stock',
-                    formatter: '.formatter.numberUnit'
-                }" />
-        </semantic:headerContent>
-
-    </semantic:SemanticPage>
+    <Page title="test" showNavButton="true" navButtonPress=".onNavBack">
+    </Page>
 
 </mvc:View>
