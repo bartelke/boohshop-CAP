@@ -123,7 +123,7 @@ sap.ui.define([
          */
         _showObject : function (oItem) {
             this.getRouter().navTo("object", {
-                objectId: oItem.getBindingContext().getPath().substring("/Books".length)
+                objectId: window.encodeURIComponent(oItem.getBindingContext().getPath().substr(1))
             });
         },
 
