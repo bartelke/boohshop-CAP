@@ -8,11 +8,17 @@ sap.ui.define(
 
     return Controller.extend("sdk.frontend2.controller.MainView", {
       onInit: function () {},
-      onPress: function (oEvent) {
+      onBooksPress: function (oEvent) {
+        // $.ajax({
+        //   url: "/catalog/Authors",
+        //   type: "GET",
+        //   dataType: "json", // added data type
+        //   success: function (res) {
+        //     console.log(res);
+        //   },
+        // });
         var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-        oRouter.navTo("authorsBooks", {
-          authorID: oEvent.getSource().getBindingContext().getObject().ID,
-        });
+        oRouter.navTo("books");
       },
     });
   }

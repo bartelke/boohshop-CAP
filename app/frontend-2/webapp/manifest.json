@@ -107,6 +107,11 @@
           "name": "authorsBooks",
           "pattern": "authorsBooks/{authorID}",
           "target": "authorsBooks"
+        },
+        {
+          "name": "books",
+          "pattern": "books",
+          "target": "books"
         }
       ],
       "targets": {
@@ -120,6 +125,10 @@
         "authorsBooks": {
           "viewId": "AuthorsBooks",
           "viewName": "AuthorsBooks"
+        },
+        "books": {
+          "viewId": "books",
+          "viewName": "Books"
         }
       }
     },

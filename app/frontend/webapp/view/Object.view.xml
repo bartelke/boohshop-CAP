@@ -1,3 +1,0 @@
-<mvc:View controllerName="sdk.frontend.controller.Object" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-    <Page title="test" showNavButton="true" navButtonPress=".onNavBack" />
-</mvc:View>

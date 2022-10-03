@@ -1,5 +1,0 @@
-<mvc:View controllerName="sdk.frontend2.controller.AuthorsBooks" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:semantic="sap.f.semantic">
-    <Page>
-        <Label text="test" />
-    </Page>
-</mvc:View>
