@@ -10,12 +10,13 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@sap/ux-specification": "^1.102.6",
+    "@sap/ux-specification": "^1.102.9",
     "sqlite3": "^5.1.1"
   },
   "scripts": {
     "start": "cds run",
-    "watch-frontend": "cds watch --open frontend/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-frontend": "cds watch --open frontend/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-frontend-2": "cds watch --open frontend-2/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "engines": {
     "node": "^16.15"
@@ -56,6 +57,7 @@
     }
   },
   "sapux": [
-    "app/frontend"
+    "app/frontend",
+    "app/frontend-2"
   ]
 }
