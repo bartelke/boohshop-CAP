@@ -7,7 +7,19 @@ sap.ui.define(
     "use strict";
 
     return Controller.extend("sdk.frontend2.controller.AuthorsBooks", {
-      onInit: function () {},
+      onInit: function () {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        oRouter
+          .getRoute("authorsBooks")
+          .attachPatternMatched(this._onPatternMatched, this);
+      },
+      _onPatternMatched: function (oEvent) {
+        this.getView().bindElement({
+          path:
+            "/" +
+            window.decodeURIComponent(oEvent.getParameter("arguments").ID),
+        });
+      },
     });
   }
 );
