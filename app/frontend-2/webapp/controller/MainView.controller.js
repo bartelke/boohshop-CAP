@@ -1,15 +1,19 @@
-sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-],
-    /**
-     * @param {typeof sap.ui.core.mvc.Controller} Controller
-     */
-    function (Controller) {
-        "use strict";
+sap.ui.define(
+  ["sap/ui/core/mvc/Controller", "sap/ui/model/json/JSONModel"],
+  /**
+   * @param {typeof sap.ui.core.mvc.Controller} Controller
+   */
+  function (Controller, JSONModel) {
+    "use strict";
 
-        return Controller.extend("sdk.frontend2.controller.MainView", {
-            onInit: function () {
-
-            }
+    return Controller.extend("sdk.frontend2.controller.MainView", {
+      onInit: function () {},
+      onPress: function (oEvent) {
+        var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        oRouter.navTo("authorsBooks", {
+          authorID: oEvent.getSource().getBindingContext().getObject().ID,
         });
+      },
     });
+  }
+);

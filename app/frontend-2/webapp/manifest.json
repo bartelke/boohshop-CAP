@@ -101,9 +101,12 @@
         {
           "name": "RouteMainView",
           "pattern": ":?query:",
-          "target": [
-            "TargetMainView"
-          ]
+          "target": ["TargetMainView"]
+        },
+        {
+          "name": "authorsBooks",
+          "pattern": "authorsBooks/{authorID}",
+          "target": "authorsBooks"
         }
       ],
       "targets": {
@@ -113,6 +116,10 @@
           "clearControlAggregation": false,
           "viewId": "MainView",
           "viewName": "MainView"
+        },
+        "authorsBooks": {
+          "viewId": "AuthorsBooks",
+          "viewName": "AuthorsBooks"
         }
       }
     },
