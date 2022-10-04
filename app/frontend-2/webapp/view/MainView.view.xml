@@ -1,6 +1,6 @@
 <mvc:View controllerName="sdk.frontend2.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:semantic="sap.f.semantic">
     <Shell>
-        <semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false" >
+        <semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false">
             <semantic:titleHeading>
                 <Title text="{i18n>title}" level="H2" />
             </semantic:titleHeading>
